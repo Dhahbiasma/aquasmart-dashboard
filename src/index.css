@@ -6,6 +6,64 @@
 
 @layer base {
   :root {
+    --background: 200 30% 96%;
+    --foreground: 210 50% 15%;
+
+    --card: 200 25% 98%;
+    --card-foreground: 210 50% 15%;
+
+    --popover: 200 25% 98%;
+    --popover-foreground: 210 50% 15%;
+
+    --primary: 185 75% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 92%;
+    --secondary-foreground: 210 50% 15%;
+
+    --muted: 200 15% 88%;
+    --muted-foreground: 210 20% 45%;
+
+    --accent: 175 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 210 50% 15%;
+
+    --success: 160 72% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 200 20% 85%;
+    --input: 200 20% 85%;
+    --ring: 185 75% 40%;
+
+    --radius: 0.75rem;
+
+    /* Custom aquatic gradients - light mode */
+    --gradient-ocean: linear-gradient(135deg, hsl(200 30% 96%) 0%, hsl(200 35% 92%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(200 25% 99%) 0%, hsl(200 25% 96%) 100%);
+    --gradient-glow: linear-gradient(135deg, hsl(185 75% 40% / 0.1) 0%, hsl(175 65% 45% / 0.05) 100%);
+    --gradient-water: linear-gradient(180deg, hsl(200 60% 70% / 0.2) 0%, hsl(200 30% 96% / 0) 100%);
+    
+    /* Shadows - light mode */
+    --shadow-card: 0 4px 24px -4px hsl(210 30% 70% / 0.25);
+    --shadow-glow: 0 0 40px -8px hsl(185 75% 40% / 0.2);
+    --shadow-float: 0 8px 32px -8px hsl(210 30% 70% / 0.3);
+
+    --sidebar-background: 200 25% 98%;
+    --sidebar-foreground: 210 30% 35%;
+    --sidebar-primary: 185 75% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 20% 92%;
+    --sidebar-accent-foreground: 210 50% 15%;
+    --sidebar-border: 200 20% 88%;
+    --sidebar-ring: 185 75% 40%;
+  }
+
+  .dark {
     --background: 210 50% 8%;
     --foreground: 200 20% 95%;
 
@@ -40,15 +98,13 @@
     --input: 210 30% 22%;
     --ring: 185 75% 45%;
 
-    --radius: 0.75rem;
-
-    /* Custom aquatic gradients */
+    /* Custom aquatic gradients - dark mode */
     --gradient-ocean: linear-gradient(135deg, hsl(210 50% 12%) 0%, hsl(200 45% 8%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(210 45% 14%) 0%, hsl(210 45% 10%) 100%);
     --gradient-glow: linear-gradient(135deg, hsl(185 75% 45% / 0.15) 0%, hsl(175 65% 50% / 0.05) 100%);
     --gradient-water: linear-gradient(180deg, hsl(200 60% 30% / 0.3) 0%, hsl(210 50% 8% / 0) 100%);
     
-    /* Shadows */
+    /* Shadows - dark mode */
     --shadow-card: 0 4px 24px -4px hsl(210 50% 5% / 0.5);
     --shadow-glow: 0 0 40px -8px hsl(185 75% 45% / 0.3);
     --shadow-float: 0 8px 32px -8px hsl(210 50% 5% / 0.6);

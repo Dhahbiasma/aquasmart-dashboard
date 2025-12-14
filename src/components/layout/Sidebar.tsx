@@ -13,6 +13,7 @@ import {
   ChevronRight
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
   { title: "Dashboard", path: "/", icon: LayoutDashboard },
@@ -95,8 +96,9 @@ export const Sidebar = () => {
         })}
       </nav>
 
-      {/* Settings at bottom */}
-      <div className="absolute bottom-4 left-0 right-0 px-4">
+      {/* Settings and Theme Toggle at bottom */}
+      <div className="absolute bottom-4 left-0 right-0 px-4 space-y-2">
+        <ThemeToggle collapsed={collapsed} />
         <NavLink
           to="/settings"
           className={cn(
